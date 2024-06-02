@@ -2,11 +2,11 @@ CREATE DATABASE customerIdentity;
 
 create table Contact(
     id SERIAL PRIMARY KEY,
-    phoneNumber VARCHAR(100),
+    phonenumber VARCHAR(100),
     email VARCHAR(255),
-    linkedId INT REFERENCES Contact(id) ON DELETE SET NULL,
-    linkPrecedence VARCHAR(25),
-    createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    updatedAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    deletedAt TIMESTAMP DEFAULT NULL
+    linkeid INT REFERENCES Contact(id) ON DELETE SET NULL,
+    linkprecedence VARCHAR(25),
+    createdat TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updatedat TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    deletedat TIMESTAMP DEFAULT NULL
 );
